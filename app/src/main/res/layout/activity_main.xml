@@ -1,164 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/midnightblue"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:src="@drawable/logo"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:layout_marginBottom="50dp"
-        android:text="GAMING GEAR\nSTORE"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textColor="@color/white"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:text="Top Seller Gaming Gear Catalog"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="@color/white"/>
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/midnightblue"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_Mcatalog"
-            android:layout_width="115dp"
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="50dp"
+            android:text="GAMING GEAR\nSTORE"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Top Seller Gaming Gear Catalog"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Mcatalog"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_element"
+                android:text="Mouse"
+                app:backgroundTint="@color/oren"/>
+
+            <Button
+                android:id="@+id/btn_Kcatalog"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_element"
+                android:text="Keyboard"
+                app:backgroundTint="@color/oren"/>
+
+            <Button
+                android:id="@+id/btn_Hcatalog"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_element"
+                android:text="Headset"
+                app:backgroundTint="@color/oren"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Manually Order"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/oren"
+                android:layout_gravity="center"
+                android:hint="Nama Barang"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/oren"
+                android:layout_gravity="center"
+                android:hint="Jumlah Barang"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_wdata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/rounded_element"
-            android:text="Mouse"
+            android:text="Order Sesuai Data"
             app:backgroundTint="@color/oren"/>
 
         <Button
-            android:id="@+id/btn_Kcatalog"
-            android:layout_width="115dp"
+            android:id="@+id/btn_call"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_element"
-            android:text="Keyboard"
+            android:text="Order Lewat Telepon"
             app:backgroundTint="@color/oren"/>
 
-        <Button
-            android:id="@+id/btn_Hcatalog"
-            android:layout_width="115dp"
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/rounded_element"
-            android:text="Headset"
-            app:backgroundTint="@color/oren"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Copyright © 2021. All Rights Reserved and This is Made With Love By Ichwal Melianto"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:text="Manually Order"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="@color/white"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/et_nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/oren"
-            android:layout_gravity="center"
-            android:hint="Nama Barang"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:textSize="15sp"
-            android:layout_marginRight="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"/>
-
-        <EditText
-            android:id="@+id/et_jumlah"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/oren"
-            android:layout_gravity="center"
-            android:hint="Jumlah Barang"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:textSize="15sp"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:inputType="number"/>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_wdata"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/rounded_element"
-        android:text="Order Sesuai Data"
-        app:backgroundTint="@color/oren"/>
-
-    <Button
-        android:id="@+id/btn_call"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:background="@drawable/rounded_element"
-        android:text="Order Lewat Telepon"
-        app:backgroundTint="@color/oren"/>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:text="Copyright © 2021. All Rights Reserved and This is Made With Love By Ichwal Melianto"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        android:textStyle="italic" />
-
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
